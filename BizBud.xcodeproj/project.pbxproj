@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A43E1532A48A9E600EEC85C /* BizBudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E1522A48A9E600EEC85C /* BizBudApp.swift */; };
+		5A43E1552A48A9E600EEC85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E1542A48A9E600EEC85C /* ContentView.swift */; };
+		5A43E1572A48A9E700EEC85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A43E1562A48A9E700EEC85C /* Assets.xcassets */; };
+		5A43E15A2A48A9E700EEC85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A43E1592A48A9E700EEC85C /* Preview Assets.xcassets */; };
+		5A43E1682A48AAB400EEC85C /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E1672A48AAB400EEC85C /* Transactions.swift */; };
+		5A43E16B2A48AAD700EEC85C /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16A2A48AAD700EEC85C /* Analytics.swift */; };
+		5A43E16D2A48AEA900EEC85C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16C2A48AEA900EEC85C /* Settings.swift */; };
+		5A43E16F2A48B13900EEC85C /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16E2A48B13900EEC85C /* Categories.swift */; };
+		5A82CAD92A48BF61007310AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAD82A48BF61007310AB /* Category.swift */; };
+		5A82CADB2A48CA1E007310AB /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CADA2A48CA1E007310AB /* Add.swift */; };
+		5A82CADE2A48D58D007310AB /* KeyboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */; };
+		5A82CAE22A48DA37007310AB /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE12A48DA37007310AB /* Period.swift */; };
+		5A82CAE42A48DC7C007310AB /* TotalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE32A48DC7C007310AB /* TotalBox.swift */; };
+		5A82CAE72A48DCE9007310AB /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE62A48DCE9007310AB /* Double.swift */; };
+		5A82CAED2A48E6BA007310AB /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAEC2A48E6BA007310AB /* DateUtils.swift */; };
+		5A82CAF12A48ECD9007310AB /* TransactionHistorySwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */; };
+		5A82CAF32A48ED4F007310AB /* HomePageSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */; };
+		5A82CAF52A48EEFB007310AB /* LoginSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */; };
+		5A82CAF72A48EF00007310AB /* SignUpSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A43E14F2A48A9E600EEC85C /* BizBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A43E1522A48A9E600EEC85C /* BizBudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizBudApp.swift; sourceTree = "<group>"; };
+		5A43E1542A48A9E600EEC85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A43E1562A48A9E700EEC85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A43E1592A48A9E700EEC85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A43E1672A48AAB400EEC85C /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		5A43E16A2A48AAD700EEC85C /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		5A43E16C2A48AEA900EEC85C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5A43E16E2A48B13900EEC85C /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		5A82CAD82A48BF61007310AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		5A82CADA2A48CA1E007310AB /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
+		5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtils.swift; sourceTree = "<group>"; };
+		5A82CAE12A48DA37007310AB /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		5A82CAE32A48DC7C007310AB /* TotalBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBox.swift; sourceTree = "<group>"; };
+		5A82CAE62A48DCE9007310AB /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		5A82CAEC2A48E6BA007310AB /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistorySwiftUI.swift; sourceTree = "<group>"; };
+		5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageSwiftUI.swift; sourceTree = "<group>"; };
+		5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwiftUI.swift; sourceTree = "<group>"; };
+		5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSwiftUI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A43E14C2A48A9E600EEC85C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A43E1462A48A9E600EEC85C = {
+			isa = PBXGroup;
+			children = (
+				5A43E1512A48A9E600EEC85C /* BizBud */,
+				5A43E1502A48A9E600EEC85C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A43E1502A48A9E600EEC85C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A43E14F2A48A9E600EEC85C /* BizBud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A43E1512A48A9E600EEC85C /* BizBud */ = {
+			isa = PBXGroup;
+			children = (
+				5A82CAE52A48DCDE007310AB /* Extensions */,
+				5A82CADC2A48D575007310AB /* Utilities */,
+				5A82CAD52A48BF47007310AB /* Models */,
+				5A43E1662A48AA8100EEC85C /* Components */,
+				5A43E1642A48AA6C00EEC85C /* Screens */,
+				5A43E1522A48A9E600EEC85C /* BizBudApp.swift */,
+				5A43E1542A48A9E600EEC85C /* ContentView.swift */,
+				5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */,
+				5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */,
+				5A43E1562A48A9E700EEC85C /* Assets.xcassets */,
+				5A43E1582A48A9E700EEC85C /* Preview Content */,
+			);
+			path = BizBud;
+			sourceTree = "<group>";
+		};
+		5A43E1582A48A9E700EEC85C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A43E1592A48A9E700EEC85C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A43E1642A48AA6C00EEC85C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5A43E1672A48AAB400EEC85C /* Transactions.swift */,
+				5A43E16A2A48AAD700EEC85C /* Analytics.swift */,
+				5A43E16C2A48AEA900EEC85C /* Settings.swift */,
+				5A43E16E2A48B13900EEC85C /* Categories.swift */,
+				5A82CADA2A48CA1E007310AB /* Add.swift */,
+				5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */,
+				5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5A43E1662A48AA8100EEC85C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A82CAE32A48DC7C007310AB /* TotalBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5A82CAD52A48BF47007310AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A82CAD82A48BF61007310AB /* Category.swift */,
+				5A82CAE12A48DA37007310AB /* Period.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A82CADC2A48D575007310AB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */,
+				5A82CAEC2A48E6BA007310AB /* DateUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5A82CAE52A48DCDE007310AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A82CAE62A48DCE9007310AB /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A43E14E2A48A9E600EEC85C /* BizBud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A43E15D2A48A9E700EEC85C /* Build configuration list for PBXNativeTarget "BizBud" */;
+			buildPhases = (
+				5A43E14B2A48A9E600EEC85C /* Sources */,
+				5A43E14C2A48A9E600EEC85C /* Frameworks */,
+				5A43E14D2A48A9E600EEC85C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BizBud;
+			productName = BizBud;
+			productReference = 5A43E14F2A48A9E600EEC85C /* BizBud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A43E1472A48A9E600EEC85C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5A43E14E2A48A9E600EEC85C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A43E14A2A48A9E600EEC85C /* Build configuration list for PBXProject "BizBud" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A43E1462A48A9E600EEC85C;
+			productRefGroup = 5A43E1502A48A9E600EEC85C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A43E14E2A48A9E600EEC85C /* BizBud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A43E14D2A48A9E600EEC85C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A43E15A2A48A9E700EEC85C /* Preview Assets.xcassets in Resources */,
+				5A43E1572A48A9E700EEC85C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A43E14B2A48A9E600EEC85C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A43E1682A48AAB400EEC85C /* Transactions.swift in Sources */,
+				5A82CAF52A48EEFB007310AB /* LoginSwiftUI.swift in Sources */,
+				5A43E16F2A48B13900EEC85C /* Categories.swift in Sources */,
+				5A82CADB2A48CA1E007310AB /* Add.swift in Sources */,
+				5A43E16B2A48AAD700EEC85C /* Analytics.swift in Sources */,
+				5A82CAF12A48ECD9007310AB /* TransactionHistorySwiftUI.swift in Sources */,
+				5A82CAE72A48DCE9007310AB /* Double.swift in Sources */,
+				5A82CAD92A48BF61007310AB /* Category.swift in Sources */,
+				5A43E16D2A48AEA900EEC85C /* Settings.swift in Sources */,
+				5A82CAE42A48DC7C007310AB /* TotalBox.swift in Sources */,
+				5A43E1552A48A9E600EEC85C /* ContentView.swift in Sources */,
+				5A82CAE22A48DA37007310AB /* Period.swift in Sources */,
+				5A82CAED2A48E6BA007310AB /* DateUtils.swift in Sources */,
+				5A82CAF32A48ED4F007310AB /* HomePageSwiftUI.swift in Sources */,
+				5A82CAF72A48EF00007310AB /* SignUpSwiftUI.swift in Sources */,
+				5A43E1532A48A9E600EEC85C /* BizBudApp.swift in Sources */,
+				5A82CADE2A48D58D007310AB /* KeyboardUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A43E15B2A48A9E700EEC85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A43E15C2A48A9E700EEC85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A43E15E2A48A9E700EEC85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BizBud/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BizBud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A43E15F2A48A9E700EEC85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BizBud/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BizBud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A43E14A2A48A9E600EEC85C /* Build configuration list for PBXProject "BizBud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A43E15B2A48A9E700EEC85C /* Debug */,
+				5A43E15C2A48A9E700EEC85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A43E15D2A48A9E700EEC85C /* Build configuration list for PBXNativeTarget "BizBud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A43E15E2A48A9E700EEC85C /* Debug */,
+				5A43E15F2A48A9E700EEC85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A43E1472A48A9E600EEC85C /* Project object */;
+}
