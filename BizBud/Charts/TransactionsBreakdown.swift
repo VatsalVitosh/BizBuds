@@ -2,14 +2,29 @@
 //  TransactionsBreakdown.swift
 //  BizBud
 //
-//  Created by Vatsal Vitosh on 20/7/23.
+//  Created by Vatsal Vitosh on 9/7/23.
 //
 
 import SwiftUI
+import Charts
 
 struct TransactionsBreakdown: View {
+    var transactions: [Transaction] = []
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal) {
+            Chart(transactions) {
+                BarMark(
+                    x: .value("Amount", $0.amount)
+                )
+                .foregroundStyle(by: .value("Category", $0.category?.name ?? ""))
+            }
+            .frame(height: 30)
+            .chartXAxis(.hidden)
+            .frame(height: 48)
+            .padding(.horizontal, 16)
+        }
+        .environment(\.layoutDirection, .leftToRight)
     }
 }
 

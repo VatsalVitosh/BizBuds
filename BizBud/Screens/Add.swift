@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct Add: View {
-    @State private var category = "Gold Ring"
+    @EnvironmentObject var realmManager: RealmManager
+    
+    @State private var selectedCategory: Category = Category(name: "Create a category first")
+    
     @State private var amount = ""
     @State private var date = Date()
     @State private var note = ""
+    
+    func onAppear() {
+        if realmManager.categories.count > 0 {
+            self.selectedCategory = realmManager.categories[0]
+        }
+    }
     
     var dateClosedRange: ClosedRange<Date> {
         let min = Calendar.current.date(byAdding: .year, value: -1, to: Date())!
@@ -19,7 +29,16 @@ struct Add: View {
         return min...max
     }
     
-    func create() {
+    func handleCreate() {
+        self.realmManager.submitTransaction(Transaction(
+            amount: Double(self.amount)!,
+            category: self.selectedCategory,
+            date: self.date,
+            note: self.note.count == 0 ? self.selectedCategory.name : self.note
+        ))
+        self.amount = ""
+        self.date = Date()
+        self.note = ""
         hideKeyboard()
     }
     
@@ -30,10 +49,14 @@ struct Add: View {
                     HStack {
                         Text("Category")
                         Spacer()
-                        Picker(selection: $category, label: Text(""), content: {
-                            Text("Gold Ring").tag("gold rings")
-                            Text("Silver Necklace").tag("silver necklaces")
-                            Text("Gold Earring").tag("gold earrings")
+                        Picker(selection: $selectedCategory, label: Text(""), content: {
+                            if realmManager.categories.count > 0 {
+                                ForEach(realmManager.categories) { category in
+                                    Text(category.name).tag(category)
+                                }
+                            } else {
+                                Text(selectedCategory.name).tag(selectedCategory)
+                            }
                         })
                     }
                     
@@ -68,7 +91,7 @@ struct Add: View {
                 .scrollDisabled(true)
                 
                 Button {
-                    create()
+                    handleCreate()
                 } label: {
                     Label("Add Transaction", systemImage: "plus")
                         .labelStyle(.titleOnly)
@@ -93,11 +116,15 @@ struct Add: View {
             }
             .navigationTitle("Add Transaction")
         }
+        .onAppear {
+            onAppear()
+        }
     }
 }
 
 struct Add_Previews: PreviewProvider {
     static var previews: some View {
         Add()
+            .environmentObject(RealmManager())
     }
 }

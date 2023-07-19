@@ -6,56 +6,58 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct Categories: View {
-    @State private var newCategoryName: String = ""
-    @State private var categories: [Category] = [
-        Category(id: 0, name: "Gold Ring"),
-        Category(id: 1, name: "Silver Necklace"),
-        Category(id: 2, name: "Gold Earring")
-    ]
+    @EnvironmentObject var realmManager: RealmManager
     
-    func submit() {
+    @State private var invalidDataAlertShowing = false
+    @State private var newCategoryName: String = ""
+    
+    func handleSubmit() {
         if newCategoryName.count > 0 {
-            categories.append(Category(
-                id: categories.count,
-                name: newCategoryName)
-            )
+            self.realmManager.submitCategory(Category(
+                name: newCategoryName
+            ))
             newCategoryName = ""
+        } else {
+            invalidDataAlertShowing = true
         }
     }
     
-    func delete(at offsets: IndexSet) {
-        categories.remove(atOffsets: offsets)
+    func handleDelete(at offsets: IndexSet) {
+        if offsets.first != nil {
+            realmManager.deleteCategory(category: realmManager.categories[offsets.first!])
+        }
     }
     
     var body: some View {
         VStack {
             List {
-                ForEach(categories) { category in
-                    HStack {
-                        Text(category.name)
-                    }
+                ForEach(realmManager.categories, id: \.name) { category in
+                    Text(category.name)
                 }
-                .onDelete(perform: delete)
+                .onDelete(perform: handleDelete)
             }
             
             Spacer()
             
-            HStack {
+            HStack(spacing: 16) {
+                
                 ZStack(alignment: .trailing) {
-                    TextField("New Category", text: $newCategoryName)
+
+                    TextField("New category", text: $newCategoryName)
                         .textFieldStyle(.roundedBorder)
                         .submitLabel(.done)
                         .onSubmit {
-                            submit()
+                            handleSubmit()
                         }
                     
                     if newCategoryName.count > 0 {
                         Button {
                             newCategoryName = ""
                         } label: {
-                            Label("Clear Input", systemImage: "xmark.circle.fill")
+                            Label("Clear input", systemImage: "xmark.circle.fill")
                                 .labelStyle(.iconOnly)
                                 .foregroundColor(.gray)
                                 .padding(.trailing, 6)
@@ -64,14 +66,35 @@ struct Categories: View {
                 }
                 
                 Button {
-                    submit()
+                    handleSubmit()
                 } label: {
-                    Label("Submit", systemImage: "plus")
+                    Label("Submit", systemImage: "paperplane.fill")
                         .labelStyle(.iconOnly)
+                        .padding(6)
+                }
+                .background(.blue)
+                .foregroundColor(.white)
+                .cornerRadius(6)
+                .alert("Category name required", isPresented: $invalidDataAlertShowing) {
+                    Button("OK", role: .cancel) {
+                        invalidDataAlertShowing = false
+                    }
                 }
             }
             .padding(.horizontal, 16)
+            .padding(.bottom, 16)
             .navigationTitle("Categories")
+        }
+        .padding(.top, 16)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button {
+                    hideKeyboard()
+                } label: {
+                    Label("Dismiss", systemImage: "keyboard.chevron.compact.down")
+                }
+            }
         }
     }
 }
@@ -79,5 +102,6 @@ struct Categories: View {
 struct Categories_Previews: PreviewProvider {
     static var previews: some View {
         Categories()
+            .environmentObject(RealmManager())
     }
 }

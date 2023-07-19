@@ -7,8 +7,14 @@
 
 import Foundation
 import SwiftUI
+import RealmSwift
 
-struct Category: Identifiable {
-    var id: Int
-    var name: String
+class Category: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted var name: String
+    
+    convenience init(name: String) {
+        self.init()
+        self.name = name
+    }
 }

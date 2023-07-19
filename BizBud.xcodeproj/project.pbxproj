@@ -15,17 +15,31 @@
 		5A43E16B2A48AAD700EEC85C /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16A2A48AAD700EEC85C /* Analytics.swift */; };
 		5A43E16D2A48AEA900EEC85C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16C2A48AEA900EEC85C /* Settings.swift */; };
 		5A43E16F2A48B13900EEC85C /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43E16E2A48B13900EEC85C /* Categories.swift */; };
+		5A767CDF2A6865000092C159 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CDE2A6865000092C159 /* Statistics.swift */; };
+		5A767CE12A6865520092C159 /* FinancialStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CE02A6865520092C159 /* FinancialStatement.swift */; };
+		5A767CE52A6873690092C159 /* HomePageSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CE42A6873690092C159 /* HomePageSwiftUI.swift */; };
+		5A767CE82A6885C90092C159 /* PeriodOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CE72A6885C90092C159 /* PeriodOverview.swift */; };
+		5A767CEB2A6887090092C159 /* WeekChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CEA2A6887090092C159 /* WeekChart.swift */; };
+		5A767CED2A6887C80092C159 /* MonthChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CEC2A6887C80092C159 /* MonthChart.swift */; };
+		5A767CEF2A6888670092C159 /* YearChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CEE2A6888670092C159 /* YearChart.swift */; };
+		5A767CF12A68890F0092C159 /* TransactionsBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CF02A68890F0092C159 /* TransactionsBreakdown.swift */; };
+		5A767CF32A6889A90092C159 /* PeriodChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CF22A6889A90092C159 /* PeriodChart.swift */; };
+		5A767CF52A6893EA0092C159 /* TransactionHistorySwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CF42A6893EA0092C159 /* TransactionHistorySwiftUI.swift */; };
+		5A767CF92A6896AD0092C159 /* LoginSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CF82A6896AD0092C159 /* LoginSwiftUI.swift */; };
+		5A767CFB2A6896BC0092C159 /* SignUpSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A767CFA2A6896BC0092C159 /* SignUpSwiftUI.swift */; };
 		5A82CAD92A48BF61007310AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAD82A48BF61007310AB /* Category.swift */; };
 		5A82CADB2A48CA1E007310AB /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CADA2A48CA1E007310AB /* Add.swift */; };
 		5A82CADE2A48D58D007310AB /* KeyboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */; };
 		5A82CAE22A48DA37007310AB /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE12A48DA37007310AB /* Period.swift */; };
-		5A82CAE42A48DC7C007310AB /* TotalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE32A48DC7C007310AB /* TotalBox.swift */; };
 		5A82CAE72A48DCE9007310AB /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE62A48DCE9007310AB /* Double.swift */; };
 		5A82CAED2A48E6BA007310AB /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAEC2A48E6BA007310AB /* DateUtils.swift */; };
-		5A82CAF12A48ECD9007310AB /* TransactionHistorySwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */; };
-		5A82CAF32A48ED4F007310AB /* HomePageSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */; };
-		5A82CAF52A48EEFB007310AB /* LoginSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */; };
-		5A82CAF72A48EF00007310AB /* SignUpSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */; };
+		5AC604B32A65CC2600890DF2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5AC604B22A65CC2600890DF2 /* Realm */; };
+		5AC604B52A65CC2600890DF2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5AC604B42A65CC2600890DF2 /* RealmSwift */; };
+		5AC604B72A65CC5400890DF2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604B62A65CC5400890DF2 /* RealmManager.swift */; };
+		5AC604BE2A65D10700890DF2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604BD2A65D10700890DF2 /* Transaction.swift */; };
+		5AC604C62A65DA8400890DF2 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604C52A65DA8400890DF2 /* Tag.swift */; };
+		5AC604C82A65DD7100890DF2 /* TransactionsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604C72A65DD7100890DF2 /* TransactionsUtils.swift */; };
+		5AC604CA2A65E8E800890DF2 /* TransactionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604C92A65E8E800890DF2 /* TransactionsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,17 +52,29 @@
 		5A43E16A2A48AAD700EEC85C /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		5A43E16C2A48AEA900EEC85C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5A43E16E2A48B13900EEC85C /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		5A767CDE2A6865000092C159 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		5A767CE02A6865520092C159 /* FinancialStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialStatement.swift; sourceTree = "<group>"; };
+		5A767CE42A6873690092C159 /* HomePageSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageSwiftUI.swift; sourceTree = "<group>"; };
+		5A767CE72A6885C90092C159 /* PeriodOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodOverview.swift; sourceTree = "<group>"; };
+		5A767CEA2A6887090092C159 /* WeekChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekChart.swift; sourceTree = "<group>"; };
+		5A767CEC2A6887C80092C159 /* MonthChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthChart.swift; sourceTree = "<group>"; };
+		5A767CEE2A6888670092C159 /* YearChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearChart.swift; sourceTree = "<group>"; };
+		5A767CF02A68890F0092C159 /* TransactionsBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBreakdown.swift; sourceTree = "<group>"; };
+		5A767CF22A6889A90092C159 /* PeriodChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodChart.swift; sourceTree = "<group>"; };
+		5A767CF42A6893EA0092C159 /* TransactionHistorySwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistorySwiftUI.swift; sourceTree = "<group>"; };
+		5A767CF82A6896AD0092C159 /* LoginSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwiftUI.swift; sourceTree = "<group>"; };
+		5A767CFA2A6896BC0092C159 /* SignUpSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSwiftUI.swift; sourceTree = "<group>"; };
 		5A82CAD82A48BF61007310AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5A82CADA2A48CA1E007310AB /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 		5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtils.swift; sourceTree = "<group>"; };
 		5A82CAE12A48DA37007310AB /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
-		5A82CAE32A48DC7C007310AB /* TotalBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBox.swift; sourceTree = "<group>"; };
 		5A82CAE62A48DCE9007310AB /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		5A82CAEC2A48E6BA007310AB /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
-		5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistorySwiftUI.swift; sourceTree = "<group>"; };
-		5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageSwiftUI.swift; sourceTree = "<group>"; };
-		5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwiftUI.swift; sourceTree = "<group>"; };
-		5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSwiftUI.swift; sourceTree = "<group>"; };
+		5AC604B62A65CC5400890DF2 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		5AC604BD2A65D10700890DF2 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5AC604C52A65DA8400890DF2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		5AC604C72A65DD7100890DF2 /* TransactionsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUtils.swift; sourceTree = "<group>"; };
+		5AC604C92A65E8E800890DF2 /* TransactionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC604B52A65CC2600890DF2 /* RealmSwift in Frameworks */,
+				5AC604B32A65CC2600890DF2 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,14 +110,15 @@
 			isa = PBXGroup;
 			children = (
 				5A82CAE52A48DCDE007310AB /* Extensions */,
+				5A767CE92A6886E70092C159 /* Charts */,
 				5A82CADC2A48D575007310AB /* Utilities */,
-				5A82CAD52A48BF47007310AB /* Models */,
 				5A43E1662A48AA8100EEC85C /* Components */,
+				5A82CAD52A48BF47007310AB /* Models */,
 				5A43E1642A48AA6C00EEC85C /* Screens */,
+				5AC604B62A65CC5400890DF2 /* RealmManager.swift */,
 				5A43E1522A48A9E600EEC85C /* BizBudApp.swift */,
 				5A43E1542A48A9E600EEC85C /* ContentView.swift */,
-				5A82CAF22A48ED4F007310AB /* HomePageSwiftUI.swift */,
-				5A82CAF02A48ECD9007310AB /* TransactionHistorySwiftUI.swift */,
+				5A767CE62A6883010092C159 /* UI */,
 				5A43E1562A48A9E700EEC85C /* Assets.xcassets */,
 				5A43E1582A48A9E700EEC85C /* Preview Content */,
 			);
@@ -112,8 +141,6 @@
 				5A43E16C2A48AEA900EEC85C /* Settings.swift */,
 				5A43E16E2A48B13900EEC85C /* Categories.swift */,
 				5A82CADA2A48CA1E007310AB /* Add.swift */,
-				5A82CAF42A48EEFB007310AB /* LoginSwiftUI.swift */,
-				5A82CAF62A48EF00007310AB /* SignUpSwiftUI.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -121,15 +148,43 @@
 		5A43E1662A48AA8100EEC85C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5A82CAE32A48DC7C007310AB /* TotalBox.swift */,
+				5AC604C52A65DA8400890DF2 /* Tag.swift */,
+				5AC604C92A65E8E800890DF2 /* TransactionsList.swift */,
+				5A767CE72A6885C90092C159 /* PeriodOverview.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		5A767CE62A6883010092C159 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A767CF82A6896AD0092C159 /* LoginSwiftUI.swift */,
+				5A767CFA2A6896BC0092C159 /* SignUpSwiftUI.swift */,
+				5A767CE42A6873690092C159 /* HomePageSwiftUI.swift */,
+				5A767CF42A6893EA0092C159 /* TransactionHistorySwiftUI.swift */,
+				5A767CE02A6865520092C159 /* FinancialStatement.swift */,
+				5A767CDE2A6865000092C159 /* Statistics.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A767CE92A6886E70092C159 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				5A767CEA2A6887090092C159 /* WeekChart.swift */,
+				5A767CEC2A6887C80092C159 /* MonthChart.swift */,
+				5A767CEE2A6888670092C159 /* YearChart.swift */,
+				5A767CF22A6889A90092C159 /* PeriodChart.swift */,
+				5A767CF02A68890F0092C159 /* TransactionsBreakdown.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		5A82CAD52A48BF47007310AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5A82CAD82A48BF61007310AB /* Category.swift */,
+				5AC604BD2A65D10700890DF2 /* Transaction.swift */,
 				5A82CAE12A48DA37007310AB /* Period.swift */,
 			);
 			path = Models;
@@ -140,6 +195,7 @@
 			children = (
 				5A82CADD2A48D58D007310AB /* KeyboardUtils.swift */,
 				5A82CAEC2A48E6BA007310AB /* DateUtils.swift */,
+				5AC604C72A65DD7100890DF2 /* TransactionsUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -168,6 +224,10 @@
 			dependencies = (
 			);
 			name = BizBud;
+			packageProductDependencies = (
+				5AC604B22A65CC2600890DF2 /* Realm */,
+				5AC604B42A65CC2600890DF2 /* RealmSwift */,
+			);
 			productName = BizBud;
 			productReference = 5A43E14F2A48A9E600EEC85C /* BizBud.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 5A43E1462A48A9E600EEC85C;
+			packageReferences = (
+				5AC604B12A65CC2600890DF2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 5A43E1502A48A9E600EEC85C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,20 +286,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A43E1682A48AAB400EEC85C /* Transactions.swift in Sources */,
-				5A82CAF52A48EEFB007310AB /* LoginSwiftUI.swift in Sources */,
+				5A767CE12A6865520092C159 /* FinancialStatement.swift in Sources */,
+				5A767CF32A6889A90092C159 /* PeriodChart.swift in Sources */,
+				5A767CF12A68890F0092C159 /* TransactionsBreakdown.swift in Sources */,
 				5A43E16F2A48B13900EEC85C /* Categories.swift in Sources */,
+				5A767CF52A6893EA0092C159 /* TransactionHistorySwiftUI.swift in Sources */,
+				5A767CED2A6887C80092C159 /* MonthChart.swift in Sources */,
+				5A767CFB2A6896BC0092C159 /* SignUpSwiftUI.swift in Sources */,
 				5A82CADB2A48CA1E007310AB /* Add.swift in Sources */,
 				5A43E16B2A48AAD700EEC85C /* Analytics.swift in Sources */,
-				5A82CAF12A48ECD9007310AB /* TransactionHistorySwiftUI.swift in Sources */,
+				5AC604B72A65CC5400890DF2 /* RealmManager.swift in Sources */,
 				5A82CAE72A48DCE9007310AB /* Double.swift in Sources */,
 				5A82CAD92A48BF61007310AB /* Category.swift in Sources */,
+				5A767CDF2A6865000092C159 /* Statistics.swift in Sources */,
+				5A767CE82A6885C90092C159 /* PeriodOverview.swift in Sources */,
 				5A43E16D2A48AEA900EEC85C /* Settings.swift in Sources */,
-				5A82CAE42A48DC7C007310AB /* TotalBox.swift in Sources */,
+				5AC604CA2A65E8E800890DF2 /* TransactionsList.swift in Sources */,
+				5AC604C62A65DA8400890DF2 /* Tag.swift in Sources */,
+				5AC604C82A65DD7100890DF2 /* TransactionsUtils.swift in Sources */,
+				5A767CF92A6896AD0092C159 /* LoginSwiftUI.swift in Sources */,
+				5A767CEB2A6887090092C159 /* WeekChart.swift in Sources */,
+				5AC604BE2A65D10700890DF2 /* Transaction.swift in Sources */,
+				5A767CE52A6873690092C159 /* HomePageSwiftUI.swift in Sources */,
 				5A43E1552A48A9E600EEC85C /* ContentView.swift in Sources */,
 				5A82CAE22A48DA37007310AB /* Period.swift in Sources */,
 				5A82CAED2A48E6BA007310AB /* DateUtils.swift in Sources */,
-				5A82CAF32A48ED4F007310AB /* HomePageSwiftUI.swift in Sources */,
-				5A82CAF72A48EF00007310AB /* SignUpSwiftUI.swift in Sources */,
+				5A767CEF2A6888670092C159 /* YearChart.swift in Sources */,
 				5A43E1532A48A9E600EEC85C /* BizBudApp.swift in Sources */,
 				5A82CADE2A48D58D007310AB /* KeyboardUtils.swift in Sources */,
 			);
@@ -437,6 +512,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AC604B12A65CC2600890DF2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AC604B22A65CC2600890DF2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AC604B12A65CC2600890DF2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		5AC604B42A65CC2600890DF2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AC604B12A65CC2600890DF2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A43E1472A48A9E600EEC85C /* Project object */;
 }
