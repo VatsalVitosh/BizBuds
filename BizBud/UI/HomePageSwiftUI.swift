@@ -31,7 +31,7 @@ struct HomePage: View {
             
             AddButtons().padding(.all)
             
-            TransactionList().background(Color.white.shadow(radius:10))
+           // TransactionsList().background(Color.white.shadow(radius:10))
         }
     }
 }
@@ -47,8 +47,6 @@ struct Revenue: View {
                     .foregroundColor(Color.white)
                     .padding(.bottom, 50)
                 
-                //reminder for sal
-                //add revenue variable here
                 Text("$\(revenue)")
                     .font(.title)
                     .fontWeight(.bold)
@@ -68,28 +66,43 @@ struct HomeButtonStyle: ButtonStyle {
 
 
 struct AddButtons: View{
+    @State private var showAddView = false
+    @State private var showAnalyticsView = false
+    
     var body: some View{
         HStack{
             VStack{
-                Button(action: {
-                    print("add transaction pressed")
-                }){
-                    Image("AddTransactions")
-                }.buttonStyle(HomeButtonStyle())
+                Button(action: { showAddView = true })
+                {
+                    Image(systemName: "plus.circle")
+                        .resizable()
+                        .foregroundColor(Color(red: 0.363, green: 0.373, blue: 0.988))
+                        .frame(width: 50, height: 50)
+                        .background(Color.white)
+                        .clipShape(Circle()).shadow(radius: 10)
+                }
+                NavigationLink("", destination:  Add(), isActive: $showAddView)
+                
                 Text("Add Transaction")
                     .font(.callout)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .frame(width: 100.0)
             }
-            
+             
             VStack{
-                Button(action: {
-                    print("asset and libilities pressed")
-                }){
-                    Image("AssetLiabilities")
-                }.buttonStyle(HomeButtonStyle())
-                Text("Asset & Liabilities")
+                Button(action: { showAnalyticsView = true })
+                {
+                    Image(systemName: "chart.line.uptrend.xyaxis.circle")
+                        .resizable()
+                        .foregroundColor(Color(red: 0.363, green: 0.373, blue: 0.988))
+                        .frame(width: 50, height: 50)
+                        .background(Color.white)
+                        .clipShape(Circle()).shadow(radius: 10)
+                }
+                NavigationLink("", destination:  Analytics(), isActive: $showAnalyticsView)
+                
+                Text("Statistics\n")
                     .font(.callout)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
