@@ -16,7 +16,7 @@ struct WeekChart: View {
     func calculateTotals() {
         transactions.forEach { transaction in
             if displayTransactions[transaction.dayInWeek] == nil {
-                displayTransactions[transaction.dayInWeek] = 10
+                displayTransactions[transaction.dayInWeek] = 0
             }
             let prevValue = displayTransactions[transaction.dayInWeek] ?? 0
             
