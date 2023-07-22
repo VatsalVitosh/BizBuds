@@ -16,7 +16,7 @@ struct WeekChart: View {
     func calculateTotals() {
         transactions.forEach { transaction in
             if displayTransactions[transaction.dayInWeek] == nil {
-                displayTransactions[transaction.dayInWeek] = 0
+                displayTransactions[transaction.dayInWeek] = 10
             }
             let prevValue = displayTransactions[transaction.dayInWeek] ?? 0
             
@@ -25,7 +25,7 @@ struct WeekChart: View {
     }
 
     var body: some View {
-        Chart {
+        Chart() {
             BarMark(
                 x: .value("Day", "Sunday"),
                 y: .value("Amount", displayTransactions["Sunday"] ?? 0)
@@ -65,7 +65,7 @@ struct WeekChart: View {
                 .foregroundStyle(.gray)
                 .lineStyle(StrokeStyle(lineWidth: 1, dash: [5]))
         }
-        .foregroundColor(.white)
+        .foregroundColor(Color(red: 0.363, green: 0.373, blue: 0.988))
         .chartXAxis {
             AxisMarks(values: .automatic) { value in
                 AxisValueLabel() {

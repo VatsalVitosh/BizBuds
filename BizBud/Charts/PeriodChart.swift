@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+var testCategory1 = Category(name: "Earring")
+var testCategory2 = Category(name: "Necklace")
+var testCategory3 = Category(name: "Ring")
+var testTransaction1 = Transaction(amount: 35, category: testCategory1, date: Date())
+var testTransaction2 = Transaction(amount: 45, category: testCategory2, date: Date())
+var testTransaction3 = Transaction(amount: 25, category: testCategory3, date: Date())
+var testTransactions = [testTransaction1, testTransaction2, testTransaction3]
+
 struct PeriodChart: View {
     @EnvironmentObject var realmManager: RealmManager
     
