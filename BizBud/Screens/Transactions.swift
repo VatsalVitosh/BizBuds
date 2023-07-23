@@ -41,17 +41,6 @@ struct Transactions: View {
                     .foregroundColor(.white)
                 }
                 
-                /*
-                 HStack(alignment: .top, spacing: 4) {
-                    Text("$")
-                        .font(.title3)
-                        .foregroundColor(.secondary)
-                        .padding(.top, 4)
-                    Text("\(totalTransactions.roundTo(2))")
-                        .font(.largeTitle)
-                }
-                */
-                
                 VStack(alignment: .leading){
                     Text("Total Revenue:")
                         .font(.body)

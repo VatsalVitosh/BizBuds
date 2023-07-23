@@ -11,6 +11,7 @@ import RealmSwift
 struct Add: View {
     @EnvironmentObject var realmManager: RealmManager
     
+    @State private var selectedType = TransactionType.sale
     @State private var selectedCategory: Category = Category(name: "Create a category first")
     
     @State private var amount = ""
@@ -30,6 +31,14 @@ struct Add: View {
     }
     
     func handleCreate() {
+        if selectedType == TransactionType.expense {
+            self.realmManager.submitTransaction(Transaction(
+                amount: -Double(self.amount)!,
+                category: self.selectedCategory,
+                date: self.date,
+                note: self.note.count == 0 ? self.selectedCategory.name : self.note
+                ))
+        }
         self.realmManager.submitTransaction(Transaction(
             amount: Double(self.amount)!,
             category: self.selectedCategory,
@@ -46,6 +55,15 @@ struct Add: View {
         NavigationView {
             VStack {
                 List {
+                    HStack {
+                        Text("Transaction Type")
+                        Spacer()
+                        Picker("", selection: $selectedType, content: {
+                            Text("Sale").tag(TransactionType.sale)
+                            Text("Expense").tag(TransactionType.expense)
+                        })
+                    }
+                    
                     HStack {
                         Text("Category")
                         Spacer()

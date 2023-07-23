@@ -33,6 +33,7 @@
 		5A82CAE22A48DA37007310AB /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE12A48DA37007310AB /* Period.swift */; };
 		5A82CAE72A48DCE9007310AB /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAE62A48DCE9007310AB /* Double.swift */; };
 		5A82CAED2A48E6BA007310AB /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82CAEC2A48E6BA007310AB /* DateUtils.swift */; };
+		5A853DB72A6DA7AB008ABB10 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A853DB62A6DA7AB008ABB10 /* TransactionType.swift */; };
 		5AC604B32A65CC2600890DF2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5AC604B22A65CC2600890DF2 /* Realm */; };
 		5AC604B52A65CC2600890DF2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5AC604B42A65CC2600890DF2 /* RealmSwift */; };
 		5AC604B72A65CC5400890DF2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC604B62A65CC5400890DF2 /* RealmManager.swift */; };
@@ -70,6 +71,7 @@
 		5A82CAE12A48DA37007310AB /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		5A82CAE62A48DCE9007310AB /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		5A82CAEC2A48E6BA007310AB /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		5A853DB62A6DA7AB008ABB10 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		5AC604B62A65CC5400890DF2 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		5AC604BD2A65D10700890DF2 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		5AC604C52A65DA8400890DF2 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				5A82CAD82A48BF61007310AB /* Category.swift */,
 				5AC604BD2A65D10700890DF2 /* Transaction.swift */,
 				5A82CAE12A48DA37007310AB /* Period.swift */,
+				5A853DB62A6DA7AB008ABB10 /* TransactionType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				5A767CF32A6889A90092C159 /* PeriodChart.swift in Sources */,
 				5A767CF12A68890F0092C159 /* TransactionsBreakdown.swift in Sources */,
 				5A43E16F2A48B13900EEC85C /* Categories.swift in Sources */,
+				5A853DB72A6DA7AB008ABB10 /* TransactionType.swift in Sources */,
 				5A767CF52A6893EA0092C159 /* TransactionHistorySwiftUI.swift in Sources */,
 				5A767CED2A6887C80092C159 /* MonthChart.swift in Sources */,
 				5A767CFB2A6896BC0092C159 /* SignUpSwiftUI.swift in Sources */,
